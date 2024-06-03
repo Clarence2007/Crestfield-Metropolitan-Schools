@@ -1,0 +1,541 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secondary School - Crestfield Metropolitan Schools</title>
+    <link rel="icon" type="image/jpg" href="Secondary-logo.jpeg">
+    <script src="https://kit.fontawesome.com/b973e14066.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academics.css">
+    <style>
+     
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="/Secondary-logo.jpeg" alt="Crestfield Logo"></a>
+    <div>
+        <h2><span style="color: rgb(241, 208, 15);">CRESTFIELD</span> <br>
+            METROPOITAN SCHOOLS
+        </h2>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+          <a href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">ABOUT</a>
+        <div class="dropdown">
+          <a href="mission.html">MISSION & VISION</a><hr>
+          <a href="core-values.html">CORE VALUES</a><hr>
+          <a href="leadership.html">MEET OUR LEADERSHIP</a>
+       
+      </div>
+    </li>
+      <li class="nav-item">
+        <a href="#">ACADEMICS</a>
+        <div class="dropdown">
+          <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+          <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+          <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#">ADMISSIONS</a>
+        <div class="dropdown">
+          <a href="/request.html">REQUEST INFORMATION</a>
+          <hr>
+            <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+           <hr>
+           <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">CONTACT</a>
+          <div class="dropdown">
+            <a href="email.html">EMAIL DIRECTORY</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">STUDENT LIFE</a>
+          <div class="dropdown">
+              <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+              <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+              <a href="school-store.html" target="_blank">SCHOOL STORE</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+      </li>
+    </ul>
+  </nav>
+  <section class="responsive-navbar">
+    <div class="nav container">
+       <div class="logo-responsive logo-responsive-secondary">
+           <a href="index.html"><img src="Secondary-logo.jpeg" alt="Crestfield Logo"></a>
+           <div>
+               <h2><span>CRESTFIELD</span> <br>
+                   METROPOLITAN <br> SCHOOLS
+               </h2>
+           </div>
+       </div>
+       
+       <!-- Cart icon -->
+       <i class="fa-solid fa-bars" id="cart-icon" data-quantity="0"></i>
+       <!-- Cart -->
+       <div class="cart cart-secondary">
+           
+           <ul class="nav-list"> 
+               <li class="nav-item">
+                   <a href="index.html">HOME</a>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ABOUT</a>
+                        <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="mission.html">MISSION & VISION</a><hr>
+                     <a href="core-values.html">CORE VALUES</a><hr>
+                     <a href="leadership.html">MEET OUR LEADERSHIP</a>
+                  
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ACADEMICS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                   <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+                   <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+                   <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ADMISSIONS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                     <a href="/request.html">REQUEST INFORMATION</a>
+                     <hr>
+                       <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+                      <hr>
+                      <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">CONTACT</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="email.html">EMAIL DIRECTORY</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">STUDENT LIFE</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+                     <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+                       <a href="/school-store.html" target="_blank">SCHOOL STORE</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                 <a target="_blank" href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+               </li>
+             </ul>
+           <!-- Close Cart -->
+          <div class="cart-close">
+           <img src="Secondary-logo.jpeg" alt="logo">
+           <i id="close-cart" class="fa-solid fa-xmark close-cart"></i>
+          </div>
+       
+       </div>
+   </div>
+</section>
+  <div class="kids-pics">
+    <img src="/secondary-header.jpg" alt="Kids">
+    <ul>
+      <a href="preschool.html"><li>PRESCHOOL</li></a>
+      <a href="primary.html"><li>PRIMARY SCHOOL</li></a>
+      <a href="secondary.html"><li  style="border-bottom: 4px solid rgb(241, 208, 15);">SECONDARY SCHOOL</li></a>
+    </ul>
+    <hr>
+    <h1 style="color: rgb(241, 208, 15);">SECONDARY SCHOOL</h1>
+  </div>
+<div class="slider-head">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="/Secondary-circuit.jpg" style="width:100%">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/BalletClub.jpeg" style="width:100%">
+     
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img3.jpg" style="width:100%">
+      
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="head-secondary">
+    <img src="" alt="Amarachi Onouha">
+    <h2>Amarachi Onouha<br>Head of Secondary School</h2>
+
+  </div>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!-- Text -->
+<section class="passage-secondary">
+  <h1>The secondary school curriculum emphasizes students' understanding and development in key subjects like mathematics, cultural arts, science, national values, English, languages, religious studies, ICT, pre-vocational studies, and physical education.</h1>
+  <p>
+    Welcome to our secondary school, spanning from J.S.S.1 to J.S.S.2 momentarily, where our mission is to cultivate an enriching environment that fosters academic excellence, personal development, and social responsibility in each student. <br><br>
+
+Our secondary school program provides a holistic journey aimed at equipping students with the knowledge, skills, and values needed to thrive in an ever-evolving society. We prioritize nurturing the whole individual, valuing not just academic progress but also emotional resilience, social interactions, and personal growth.<br><br>
+
+Informed by years of educational research and best practices, our curriculum is meticulously crafted to offer a diverse array of learning experiences tailored to the unique needs and interests of our students. From dynamic lessons in mathematics and language arts to hands-on explorations in science and creative expression in the arts, every facet of our curriculum is designed to spark curiosity, foster creativity, and nurture critical thinking.<br><br>
+
+Central to our educational philosophy is the belief that active engagement drives optimal learning outcomes. Therefore, our classrooms are vibrant spaces where students are encouraged to inquire, explore, and connect their learning to the world around them. Through experiential learning endeavors such as field trips, interactive projects, and collaborative group work, students gain profound insights into concepts and develop vital skills for their future endeavors.<br><br>
+
+Beyond academic achievements, our secondary school experience emphasizes character education and social-emotional learning. We strive to instill values like integrity, empathy, resilience, and inclusivity in our students, shaping them into compassionate and responsible members of society. Through daily interactions, classroom dialogues, and service-oriented initiatives, students learn the significance of kindness, respect, and diversity.<br><br>
+
+At the core of our secondary school community is a dedicated cohort of educators who are passionate about inspiring and empowering every student to unlock their full potential. Our teachers are not only subject matter experts but also supportive mentors and role models who go the extra mile to nurture the academic, social, and emotional growth of each student.<br><br>
+
+Moreover, our secondary school is committed to fostering a culture of collaboration and partnership among students, parents, teachers, and the broader community. We believe that education is a collective endeavor, and through collaborative efforts, we create an inclusive and supportive learning environment where every student can thrive.<br><br>
+
+As we embark on this collective journey, we invite you to join us in embracing the joy of learning, the power of curiosity, and the richness of diversity. Together, let us inspire and empower the next generation of leaders, innovators, and changemakers who will positively impact the world.
+  </p> <br>
+  <h3><i>Amarachi Onouha| Head of Secondary School</i></h3>
+</section>
+<div class="header-secondary">
+  <h1> Secondary School Curriculum</h1>
+</div>
+<section class="boxes">
+  <div class="subject-box-secondary" data-subject="mathematics"><i class="fa-solid fa-calculator"></i><br>Mathematics </div>
+  <div class="subject-box-secondary" data-subject="art"><i class="fa-solid fa-palette"></i> <br>Cultural & Creative Arts</div>
+  <div class="subject-box-secondary" data-subject="science"><i class="fa-solid fa-microscope"></i><br>Science & Technology </div>
+  <div class="subject-box-secondary" data-subject="current"><i class="fa-solid fa-book-bookmark"></i><br>National Values</div>
+  <div class="subject-box-secondary" data-subject="english"><i class="fa-solid fa-pen-nib"></i><br>English Language</div>
+  <div class="subject-box-secondary" data-subject="languages"><i class="fa-solid fa-language"></i><br>Languages</div>
+  <div class="subject-box-secondary" data-subject="religious"><i class="fa-solid fa-bookmark"></i><br>Religious Studies</div>
+  <div class="subject-box-secondary" data-subject="ict"><i class="fa-solid fa-computer"></i><br>Information & Communication Technology </div>
+  <div class="subject-box-secondary" data-subject="prevocational"><i class="fa-solid fa-book-open-reader"></i><br>Prevocational studies </div>
+  <div class="subject-box-secondary" data-subject="phe"><i class="fa-solid fa-table-tennis"></i><br>Physical & Health Education </div>
+  <!-- Add more boxes as needed -->
+
+  <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="subject-info"></p>
+      </div>
+  </div>
+  <img src="/Secondary Class.jpg" alt="Class Pics">
+  <h2><i> ~ A typical secondary school class at Crestfield. </i></h2>
+</section>
+
+ <!-- footer -->
+ <footer>
+  <section class="footer-top-secondary">
+      <div>
+        <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+        </i>&nbsp;<i class="fa-brands fa-youtube">
+       <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <img src="/Secondary-logo.jpeg" alt="Logo">
+      <div>
+          <ul>
+              <a href="mission.html">
+                  <li>ABOUT</li>
+              </a>
+              <a href="preschool.html">
+                  <li>ACADEMICS</li>
+              </a>
+              <a href="admission-application.html">
+                  <li>ADMISSIONS</li>
+              </a>
+              <a href="email.html">
+                  <li>CONTACT</li>
+              </a>
+          </ul>
+      </div>
+  </section>
+  <br>
+  <hr><br>
+  <section class="footer-top-secondary responsive">
+    <img src="/Secondary-logo.jpeg" alt="Logo">
+    <div>
+      <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+      <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+      </i>&nbsp;<i class="fa-brands fa-youtube">
+     <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div>
+        <ul>
+            <a href="mission.html">
+                <li>ABOUT</li>
+            </a>
+            <a href="preschool.html">
+                <li>ACADEMICS</li>
+            </a>
+            <a href="admission-application.html">
+                <li>ADMISSIONS</li>
+            </a>
+            <a href="email.html">
+                <li>CONTACT</li>
+            </a>
+        </ul>
+    </div>
+</section>
+  <section class="footer-bottom-secondary">
+      <h3>Crestfield Metropolitan Schools |<br> <span><a target="_blank" href="https://www.google.com/maps/place/Crestfield+Metropolitan+Schools/@12.0506266,8.5317705,15z/data=!4m10!1m2!2m1!1screstfield+metropolitan+schools+kano+kano!3m6!1s0x11ae874eb1c15ba7:0x9226569381563039!8m2!3d12.0506266!4d8.5420702!15sCiljcmVzdGZpZWxkIG1ldHJvcG9saXRhbiBzY2hvb2xzIGthbm8ga2Fub5IBBnNjaG9vbOABAA!16s%2Fg%2F11r7y0g_g9?entry=ttu">1 Crestfield Avenue, Wisdom Estate, Kano</a> | +234-(0)-901-5152-030</span></h3>
+      <h3 id="all-rights">© 2024 Crestfield Metropolitan Schools. All Rights Reserved.</h3>
+  </section>
+</footer>
+<h6 style="color: grey; background-color: #242424; overflow-y: hidden; display: flex; justify-content: flex-end; padding: 1rem;">Powered by Clarence Omotalade <br>+234-(0)-708-602-3590
+</h6>
+<script src="main.js"></script>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.subject-box-secondary');
+    const modal = document.getElementById('modal');
+    const subjectInfo = document.getElementById('subject-info');
+    const closeButton = document.querySelector('.close-button');
+    
+    const subjectDetails = {
+  mathematics: `
+    <h1>JSS1 Mathematics</h1>
+    <p>In JSS1 Mathematics, students delve into basic arithmetic operations, including addition, subtraction, multiplication, and division. They also begin to explore fundamental algebraic concepts such as equations and inequalities, as well as geometric principles like shapes, measurements, and spatial reasoning.</p>
+    <h1>JSS2 Mathematics</h1>
+    <p>JSS2 Mathematics builds upon the foundation laid in JSS1, covering more advanced topics such as algebraic expressions, quadratic equations, trigonometry, and coordinate geometry. Students also delve deeper into statistical analysis, probability, and problem-solving techniques.</p>
+  `,
+  art: `
+    <h1>JSS1 Cultural and Creative Arts</h1>
+    <p>In JSS1 Cultural and Creative Arts, students explore various forms of artistic expression, including visual arts, music, dance, drama, and traditional crafts. They learn about different cultures, artistic styles, and historical influences, while also developing their creative skills through hands-on projects and performances.</p>
+    <h1>JSS2 Cultural and Creative Arts</h1>
+    <p>JSS2 Cultural and Creative Arts delves deeper into the exploration of artistic mediums and cultural traditions. Students engage in more advanced techniques and concepts in visual arts, music theory, theatrical performances, and cultural studies, fostering a deeper appreciation for the arts and creativity.</p>
+  `,
+  science: `
+    <h1>JSS1 Science and Technology</h1>
+    <p>In JSS1 Science and Technology, students embark on a journey of discovery, exploring the natural world and technological innovations. They learn about the basic principles of biology, chemistry, physics, and environmental science, while also gaining hands-on experience with scientific experiments and technological tools.</p>
+    <h1>JSS2 Science and Technology</h1>
+    <p>JSS2 Science and Technology delves deeper into the exploration of scientific phenomena and technological advancements. Students engage in more complex experiments, scientific investigations, and engineering challenges, fostering critical thinking, problem-solving skills, and a passion for scientific inquiry.</p>
+  `,
+  current: `
+    <h1>JSS1 National Values</h1>
+    <p>In JSS1 National Values, students learn about the core principles of citizenship, ethics, and societal norms. They explore topics such as civic responsibility, human rights, cultural diversity, and environmental conservation, while also reflecting on their roles as active and responsible members of society.</p>
+    <h1>JSS2 National Values</h1>
+    <p>JSS2 National Values continues to foster a deeper understanding of civic education and social studies. Students delve into topics such as democracy, governance, global citizenship, sustainable development, and social justice, empowering them to become informed, engaged, and socially responsible individuals.</p>
+  `,
+  english: `
+    <h1>JSS1 English Language</h1>
+    <p>JSS1 English Language focuses on developing students' proficiency in reading, writing, listening, and speaking skills. They explore various literary genres, language structures, and communication strategies, while also enhancing their vocabulary, grammar, and comprehension abilities through engaging texts and interactive activities.</p>
+    <h1>JSS2 English Language</h1>
+    <p>JSS2 English Language further enhances students' language proficiency and communication skills. They analyze complex literary texts, engage in critical discussions, and express their ideas coherently and persuasively. Students also develop their writing skills through essays, reports, and creative compositions, fostering a love for language and literature.</p>
+  `,
+  languages: `
+    <h1>JSS1 Languages</h1>
+    <p>In JSS1, students explore the rich diversity of languages and cultures through the study of Hausa and French. They learn basic vocabulary, grammar rules, and conversational phrases in each language, while also gaining insights into the cultural customs, traditions, and heritage associated with these linguistic communities.</p>
+    <h1>JSS2 Languages</h1>
+    <p>JSS2 Languages deepens students' language proficiency and cultural understanding in Hausa and French. They engage in more complex language structures, authentic communication tasks, and cultural exchanges, preparing them for real-world interactions and global citizenship.</p>
+  `,
+  religious: `
+    <h1>JSS1 Religious Studies</h1>
+    <p>In JSS1 Religious Studies, students explore the beliefs, practices, and teachings of major world religions, with a focus on Christian Religious Studies (CRS) for Christians and Islamic Religious Studies (IRS) for Muslims. They learn about the significance of faith, morality, and spirituality in shaping individual identities and societal values.</p>
+    <h1>JSS2 Religious Studies</h1>
+    <p>JSS2 Religious Studies continues the exploration of religious beliefs and values, fostering religious tolerance, understanding, and respect. Students delve deeper into the study of scriptures, religious rituals, ethical principles, and interfaith dialogue, promoting empathy, compassion, and peaceful coexistence.</p>
+  `,
+  ict: `
+    <h1>JSS1 Information & Communication Technology</h1>
+    <p>JSS1 Information & Communication Technology (ICT) introduces students to the fundamental concepts of digital literacy, computer applications, and internet safety. They learn basic computer operations, software skills, and online etiquette, while also exploring the potential of technology for communication, collaboration, and creativity.</p>
+    <h1>JSS2 Information & Communication Technology</h1>
+    <p>JSS2 Information & Communication Technology (ICT) advances students' technological proficiency and digital skills. They explore topics such as coding, web design, multimedia production, and cybersecurity, gaining practical knowledge and critical thinking abilities to navigate the digital world responsibly and innovatively.</p>
+  `,
+  prevocational: `
+    <h1>JSS1 Pre-vocational Studies</h1>
+    <p>JSS1 Pre-vocational Studies offers students practical skills and knowledge in agricultural practices and home economics. They learn about crop cultivation, animal husbandry, food processing, nutrition, and household management, preparing them for future vocational pathways and sustainable living.</p>
+    <h1>JSS2 Pre-vocational Studies</h1>
+    <p>JSS2 Pre-vocational Studies builds upon the foundational skills acquired in JSS1, with a focus on more specialized topics in agriculture and home economics. Students engage in hands-on projects, entrepreneurial activities, and vocational training, equipping them with valuable skills for personal and professional success.</p>
+  `,
+  phe: `
+  <h1>JSS1 Physical & Health Education</h1>
+    <p>JSS1 Physical & Health Education promotes physical fitness, sportsmanship, and health awareness among students. They participate in various physical activities, sports games, and fitness exercises, while also learning about the importance of nutrition, hygiene, and personal well-being.</p>
+    <h1>JSS2 Physical & Health Education</h1>
+    <p>JSS2 Physical & Health Education continues to emphasize the importance of physical fitness and healthy lifestyles. Students engage in more challenging sports and recreational activities, while also exploring topics such as mental health, stress management, and disease prevention, empowering them to make informed choices for lifelong wellness.</p>
+   `
+  }
+
+
+    boxes.forEach(box => {
+    box.addEventListener('click', () => {
+        const subject = box.getAttribute('data-subject');
+        subjectInfo.innerHTML = subjectDetails[subject]; // Use innerHTML to render HTML content
+        modal.style.display = 'block';
+    });
+});
+
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+</script>
+</body>
+</html>

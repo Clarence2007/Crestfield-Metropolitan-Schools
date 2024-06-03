@@ -1,0 +1,476 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preschool - Crestfield Metropolitan Schools</title>
+    <link rel="icon" type="image/jpg" href="logo.png">
+    <script src="https://kit.fontawesome.com/b973e14066.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academics.css">
+    <style>
+     
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Crestfield Logo"></a>
+    <div>
+        <h2><span>CRESTFIELD</span> <br>
+            METROPOITAN SCHOOLS
+        </h2>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+          <a href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">ABOUT</a>
+        <div class="dropdown">
+          <a href="mission.html">MISSION & VISION</a><hr>
+          <a href="core-values.html">CORE VALUES</a><hr>
+          <a href="leadership.html">MEET OUR LEADERSHIP</a>
+       
+      </div>
+    </li>
+      <li class="nav-item">
+        <a href="#">ACADEMICS</a>
+        <div class="dropdown">
+          <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+          <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+          <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#">ADMISSIONS</a>
+        <div class="dropdown">
+          <a href="/request.html">REQUEST INFORMATION</a>
+          <hr>
+            <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+           <hr>
+           <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">CONTACT</a>
+          <div class="dropdown">
+            <a href="email.html">EMAIL DIRECTORY</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">STUDENT LIFE</a>
+          <div class="dropdown">
+              <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+              <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+              <a href="school-store.html" target="_blank">SCHOOL STORE</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+      </li>
+    </ul>
+  </nav>
+  <section class="responsive-navbar">
+    <div class="nav container">
+       <div class="logo-responsive">
+           <a href="index.html"><img src="logo.png" alt="Crestfield Logo"></a>
+           <div>
+               <h2><span>CRESTFIELD</span> <br>
+                   METROPOLITAN SCHOOLS
+               </h2>
+           </div>
+       </div>
+       
+       <!-- Cart icon -->
+       <i class="fa-solid fa-bars" id="cart-icon" data-quantity="0"></i>
+       <!-- Cart -->
+       <div class="cart">
+           
+           <ul class="nav-list"> 
+               <li class="nav-item">
+                   <a href="index.html">HOME</a>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ABOUT</a>
+                        <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="mission.html">MISSION & VISION</a><hr>
+                     <a href="core-values.html">CORE VALUES</a><hr>
+                     <a href="leadership.html">MEET OUR LEADERSHIP</a>
+                  
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ACADEMICS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                   <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+                   <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+                   <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ADMISSIONS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                     <a href="/request.html">REQUEST INFORMATION</a>
+                     <hr>
+                       <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+                      <hr>
+                      <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">CONTACT</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="email.html">EMAIL DIRECTORY</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">STUDENT LIFE</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+                     <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+                       <a href="school-store.html" target="_blank">SCHOOL STORE</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                 <a href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+               </li>
+             </ul>
+           <!-- Close Cart -->
+          <div class="cart-close">
+           <img src="logo.png" alt="logo">
+           <i id="close-cart" class="fa-solid fa-xmark close-cart"></i>
+          </div>
+       
+       </div>
+   </div>
+</section>
+  <div class="kids-pics">
+    <img src="/IMG_0334.jpg" alt="Kids">
+    <ul>
+      <a href="preschool.html"><li style="border-bottom: 4px solid ;">PRESCHOOL</li></a>
+      <a href="primary.html"><li>PRIMARY SCHOOL</li></a>
+      <a href="secondary.html"><li>SECONDARY SCHOOL</li></a>
+    </ul>
+    <hr>
+    <h1>PRESCHOOL</h1>
+  </div>
+<div class="slider-head">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="nur kids.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="nur classrooms frontal.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/kids-playground.jpg" style="width:100%">
+      
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="head">
+    <img src="/Biskila (2).jpg" alt="Biskila Adiche">
+    <h2>Biskila Adiche <br>Head of Preschool</h2>
+
+  </div>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!-- Text -->
+<section class="passage">
+  <h1>The curriculum of the Preschool (grades playgroup through upper kindergarten) centers on the student’s understanding and development of the core subjects of arts, reading, phonics, and numeracy.</h1>
+  <p>
+
+Our playgroup through upper-kindergarten program aims to prepare our youngest learners to become eager, curious, and inquisitive individuals with strong character and respect for all, ultimately
+ making a positive impact on the world. <br>
+<br>
+Based on research showing that children learn best through active, exploratory experiences, our Preschool curriculum is designed to offer days filled with exploration, investigation, and play. <br><br>
+Students learn in a warm and nurturing environment that emphasizes wonder and discovery. Every subject incorporates play, whether through challenging academics, interactive science activities, or
+ social skills development. We focus daily on building a foundation of life skills, critical thinking, and a love of learning.
+  </p><br>
+  <h3><i> - Biskila Adiche | Head of Preschool</i></h3>
+</section>
+
+<div class="header">
+  <h1>Preschool Curriculum</h1>
+</div>
+<section class="boxes">
+  <div class="subject-box" data-subject="numeracy"> <i class="fa-solid fa-calculator"></i><br> Numeracy</div>
+  <div class="subject-box" data-subject="art"><i class="fa-solid fa-palette"></i> <br>Arts & Crafts</div>
+  <div class="subject-box" data-subject="science"><i class="fa-solid fa-microscope"></i><br>Elementary Science</div>
+  <div class="subject-box" data-subject="phonics"><i class="fa-solid fa-book-bookmark"></i><br>Phonics</div>
+  <div class="subject-box" data-subject="literacy"><i class="fa-solid fa-pen-nib"></i><br>Literacy</div>
+  <div class="subject-box" data-subject="recreation"><i class="fa-solid fa-basketball"></i><br>Recreation</div>
+  <!-- Add more boxes as needed -->
+
+  <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="subject-info"></p>
+      </div>
+  </div>
+
+  <img src="/nur classrooms back.jpg" alt="Class Pics">
+  <h2><i> ~ A typical preschool class at Crestfield. </i></h2>
+</section>
+ <!-- footer -->
+ 
+ <footer>
+  <section class="footer-top">
+      <div>
+          <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+          <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+          </i>&nbsp;<i class="fa-brands fa-youtube">
+         <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <img src="/logo.jpg" alt="Logo">
+      <div>
+          <ul>
+              <a href="mission.html">
+                  <li>ABOUT</li>
+              </a>
+              <a href="preschool.html">
+                  <li>ACADEMICS</li>
+              </a>
+              <a href="admission-application.html">
+                  <li>ADMISSIONS</li>
+              </a>
+              <a href="email.html">
+                  <li>CONTACT</li>
+              </a>
+          </ul>
+      </div>
+  </section>
+  <br>
+  <hr><br>
+  <section class="footer-top responsive">
+    <img src="/logo.jpg" alt="Logo">
+    <div>
+        <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+        </i>&nbsp;<i class="fa-brands fa-youtube">
+       <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div>
+        <ul>
+            <a href="mission.html">
+                <li>ABOUT</li>
+            </a>
+            <a href="preschool.html">
+                <li>ACADEMICS</li>
+            </a>
+            <a href="admission-application.html">
+                <li>ADMISSIONS</li>
+            </a>
+            <a href="email.html">
+                <li>CONTACT</li>
+            </a>
+        </ul>
+    </div>
+</section>
+  <section class="footer-bottom">
+      <h3>Crestfield Metropolitan Schools |<br> <span><a target="_blank" href="https://www.google.com/maps/place/Crestfield+Metropolitan+Schools/@12.0506266,8.5317705,15z/data=!4m10!1m2!2m1!1screstfield+metropolitan+schools+kano+kano!3m6!1s0x11ae874eb1c15ba7:0x9226569381563039!8m2!3d12.0506266!4d8.5420702!15sCiljcmVzdGZpZWxkIG1ldHJvcG9saXRhbiBzY2hvb2xzIGthbm8ga2Fub5IBBnNjaG9vbOABAA!16s%2Fg%2F11r7y0g_g9?entry=ttu">1 Crestfield Avenue, Wisdom Estate, Kano</a> | +234-(0)-901-5152-030</span></h3>
+      <h3 id="all-rights">© 2024 Crestfield Metropolitan Schools. All Rights Reserved.</h3>
+  </section>
+</footer>
+<h6 style="color: grey; background-color: #242424; overflow-y: hidden; display: flex; justify-content: flex-end; padding: 1rem;">Powered by Clarence Omotalade <br>+234-(0)-708-602-3590
+</h6>
+<script src="main.js"></script>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.subject-box');
+    const modal = document.getElementById('modal');
+    const subjectInfo = document.getElementById('subject-info');
+    const closeButton = document.querySelector('.close-button');
+
+    const subjectDetails = {
+        numeracy: 'Numeracy is woven into all aspects of our daily activities. Our math curriculum is designed to be relevant and engaging for our youngest learners. In Pre-K and Kindergarten, the focus is on foundational number concepts through lessons, activities, and centers that build skills in patterning, classifying, arranging, sequencing, comparing, and understanding relationships between objects and numbers. Our curriculum also covers number sense, number recognition, patterning, place value, addition, estimation, ordinal numbers, counting, and subtraction. Students are actively involved in math activities throughout their day.',
+        art: 'Students have opportunities to participate in thematic art projects and create unique, individualized artworks. Art center time, along with teacher-directed and creative exploration activities, helps build confidence, imagination, and enjoyment in our young artists.',
+        science:'Students engage in hands-on science activities that foster curiosity and exploration. Our science curriculum includes thematic projects and experiments that encourage observation, questioning, and discovery. Through teacher-guided and independent explorations, young scientists build their understanding of the natural world and develop a love for learning about science.',
+        phonics:'Phonics instruction is integrated into our curriculum to help young learners develop strong reading skills. Our phonics program includes interactive activities and games that teach letter-sound correspondence, decoding, and word recognition. Through engaging lessons and guided practice, students build phonemic awareness and gain the foundational skills needed for reading fluency and comprehension.',
+        literacy:'Literacy development is a key focus of our curriculum, aimed at nurturing strong reading and writing skills in our students. Through a variety of engaging activities and structured lessons, students explore language, vocabulary, comprehension, and writing strategies. Our literacy program emphasizes the importance of reading for pleasure and comprehension, while also providing opportunities for creative expression through writing. With a supportive learning environment and tailored instruction, students develop the foundational skills necessary for lifelong literacy success.',
+        recreation:'Recreation activities are an integral part of our program, offering students opportunities for physical activity, social interaction, and personal growth. Our recreation program provides a diverse range of activities, including sports, games, arts and crafts, and outdoor adventures. Through these activities, students develop teamwork skills, leadership abilities, and a sense of camaraderie. Whether it\'s through organized sports leagues, creative arts workshops, or outdoor excursions, our recreation program aims to foster a love for active living and exploration in our students.'
+        // Add more subjects as needed
+    };
+
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const subject = box.getAttribute('data-subject');
+            subjectInfo.textContent = subjectDetails[subject];
+            modal.style.display = 'block';
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+</script>
+</body>
+</html>

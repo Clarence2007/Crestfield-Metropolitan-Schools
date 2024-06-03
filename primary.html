@@ -1,0 +1,641 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary School - Crestfield Metropolitan Schools</title>
+    <link rel="icon" type="image/jpg" href="logo.png">
+    <script src="https://kit.fontawesome.com/b973e14066.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="academics.css">
+    <style>
+     
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+    </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Crestfield Logo"></a>
+    <div>
+        <h2><span>CRESTFIELD</span> <br>
+            METROPOITAN SCHOOLS
+        </h2>
+    </div>
+  </header>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li class="nav-item">
+          <a href="index.html">HOME</a>
+      </li>
+      <li class="nav-item">
+        <a href="#">ABOUT</a>
+        <div class="dropdown">
+          <a href="mission.html">MISSION & VISION</a><hr>
+          <a href="core-values.html">CORE VALUES</a><hr>
+          <a href="leadership.html">MEET OUR LEADERSHIP</a>
+       
+      </div>
+    </li>
+      <li class="nav-item">
+        <a href="#">ACADEMICS</a>
+        <div class="dropdown">
+          <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+          <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+          <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#">ADMISSIONS</a>
+        <div class="dropdown">
+          <a href="/request.html">REQUEST INFORMATION</a>
+          <hr>
+            <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+           <hr>
+           <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+        </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">CONTACT</a>
+          <div class="dropdown">
+            <a href="email.html">EMAIL DIRECTORY</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+          <a href="#">STUDENT LIFE</a>
+          <div class="dropdown">
+              <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+              <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+              <a href="/school-store.html" target="_blank">SCHOOL STORE</a>
+           
+          </div>
+      </li>
+      <li class="nav-item">
+        <a target="_blank" href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+      </li>
+    </ul>
+  </nav>
+  <section class="responsive-navbar">
+    <div class="nav container">
+       <div class="logo-responsive">
+           <a href="index.html"><img src="logo.png" alt="Crestfield Logo"></a>
+           <div>
+               <h2><span>CRESTFIELD</span> <br>
+                   METROPOLITAN SCHOOLS
+               </h2>
+           </div>
+       </div>
+       
+       <!-- Cart icon -->
+       <i class="fa-solid fa-bars" id="cart-icon" data-quantity="0"></i>
+       <!-- Cart -->
+       <div class="cart">
+           
+           <ul class="nav-list"> 
+               <li class="nav-item">
+                   <a href="index.html">HOME</a>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ABOUT</a>
+                        <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="mission.html">MISSION & VISION</a><hr>
+                     <a href="core-values.html">CORE VALUES</a><hr>
+                     <a href="leadership.html">MEET OUR LEADERSHIP</a>
+                  
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ACADEMICS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                   <a href="preschool.html" target="_blank">PRESCHOOL</a><hr>
+                   <a href="primary.html" target="_blank">PRIMARY SCHOOL</a><hr>
+                   <a href="secondary.html" target="_blank">SECONDARY SCHOOL</a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">ADMISSIONS</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                 <div class="dropdown">
+                     <a href="/request.html">REQUEST INFORMATION</a>
+                     <hr>
+                       <a href="admissions-policy.html">ADMISSIONS POLICY</a>
+                      <hr>
+                      <a href="/admission-application.html">ADMISSIONS APPLICATION PROCESS </a>
+                 </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">CONTACT</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="email.html">EMAIL DIRECTORY</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                   <div class="accordion-header-responsive">
+                       <a href="#">STUDENT LIFE</a>
+                       <i class="fa fa-caret-left"></i>
+                   </div>
+                   <div class="dropdown">
+                     <a href="/CRESTFIELD CALENDAR.pdf" target="_blank">CALENDAR</a><hr>
+                     <a href="/clubs.html">CLUBS & SOCIETIES</a><hr>
+                       <a href="/school-store.html" target="_blank">SCHOOL STORE</a>
+                    
+                   </div>
+               </li>
+               <hr>
+               <li class="nav-item">
+                 <a href="https://crestfield.schoolpal.ng/login">RESULT CHECK</a> 
+               </li>
+             </ul>
+           <!-- Close Cart -->
+          <div class="cart-close">
+           <img src="logo.png" alt="logo">
+           <i id="close-cart" class="fa-solid fa-xmark close-cart"></i>
+          </div>
+       
+       </div>
+   </div>
+</section>
+  <div class="kids-pics">
+    <img src="/Art-kids.jpg" alt="Kids">
+    <ul>
+      <a href="preschool.html"><li>PRESCHOOL</li></a>
+      <a href="primary.html"><li  style="border-bottom: 4px solid ;">PRIMARY SCHOOL</li></a>
+      <a href="secondary.html"><li>SECONDARY SCHOOL</li></a>
+    </ul>
+    <hr>
+    <h1>PRIMARY SCHOOL</h1>
+  </div>
+  
+<div class="slider-head">
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="/IMG_0363.jpg" style="width:100%">
+  
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="/IMG_0216.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="/STA_8693.jpg" style="width:100%">
+     
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <div class="head">
+    <img src="" alt="Wiseborn Raimi">
+    <h2>Wisborn Raimi <br>Head of Primary School</h2>
+
+  </div>
+</div>
+<br>
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<!-- Text -->
+<section class="passage">
+  <h1>The primary school curriculum (grades 1 to 5) focuses on fostering students' comprehension and growth in essential subjects such as mathematics, science and technology, language arts, and contemporary issues.</h1>
+  <p>
+    Welcome to our primary school, spanning from Grade 1 to Grade 5, where our mission is to foster a nurturing environment that cultivates academic excellence, personal growth, and social responsibility in every student. <br><br>
+
+    Our primary school program is a comprehensive journey that aims to equip students with the knowledge, skills, and values necessary to thrive in an ever-changing world. We believe in nurturing the whole child, valuing not only their academic achievements but also their emotional well-being, social interactions, and personal development. <br><br>
+    
+    Drawing upon decades of educational research and best practices, our curriculum is carefully designed to provide a rich tapestry of learning experiences that cater to the diverse needs and interests of our students. From engaging lessons in mathematics and language arts to hands-on explorations in science and creative expression in the arts, every aspect of our curriculum is thoughtfully crafted to ignite curiosity, foster creativity, and promote critical thinking.<br><br>
+    
+    Central to our educational philosophy is the belief that children learn best when they are actively engaged in the learning process. That's why our classrooms are vibrant spaces where students are encouraged to ask questions, explore ideas, and make connections between their learning and the world around them. Through experiential learning opportunities, such as field trips, hands-on projects, and collaborative group work, students develop a deeper understanding of concepts and build essential skills that will serve them well in the future.<br><br>
+    
+    Beyond academic excellence, our primary school experience is enriched by a strong emphasis on character education and social-emotional learning. We believe in instilling values such as integrity, empathy, resilience, and compassion in our students, helping them develop into responsible and caring members of their communities. Through daily interactions, classroom discussions, and service-learning projects, students learn the importance of kindness, respect, and inclusivity.<br><br>
+    
+    At the heart of our primary school community is a dedicated team of educators who are passionate about inspiring and empowering every student to reach their full potential. Our teachers are not only experts in their respective fields but also caring mentors and role models who go above and beyond to support the academic, social, and emotional growth of each child.<br><br>
+    
+    Moreover, our primary school is committed to fostering a culture of collaboration and partnership between students, parents, teachers, and the wider community. We believe that education is a shared responsibility and that by working together, we can create a supportive and inclusive learning environment where every student thrives.<br><br>
+    
+    As we embark on this journey together, we invite you to join us in celebrating the joy of learning, the power of curiosity, and the beauty of diversity. Together, let us inspire and empower the next generation of leaders, innovators, and changemakers who will make a positive impact on the world. <br><br>
+    
+    This version expands on various aspects of the primary school experience, including academic curriculum, experiential learning, character education, teacher-student relationships, community involvement, and the overarching philosophy of the school.
+  </p>
+    <br>
+    <h3><i>Wiseborn Raimi | Head of Primary School</i></h3>
+</section>
+<div class="header">
+  <h1>Primary School Curriculum</h1>
+</div>
+<section class="boxes">
+  <div class="subject-box" data-subject="mathematics"><i class="fa-solid fa-calculator"></i><br>Mathematics </div>
+  <div class="subject-box" data-subject="art"><i class="fa-solid fa-palette"></i> <br>Cultural & Creative Arts</div>
+  <div class="subject-box" data-subject="science"><i class="fa-solid fa-microscope"></i><br>Basic Science</div>
+  <div class="subject-box" data-subject="current"><i class="fa-solid fa-book-bookmark"></i><br>National Values</div>
+  <div class="subject-box" data-subject="reasoning"><i class="fa-solid fa-pen-nib"></i><br>General Reasoning & knowledge</div>
+  <div class="subject-box" data-subject="languages"><i class="fa-solid fa-language"></i><br>Languages</div>
+  <div class="subject-box" data-subject="comprehension"><i class="fa-solid fa-bookmark"></i><br>English Comprehension & Compositon</div>
+  <div class="subject-box" data-subject="grammar"><i class="fa-solid fa-book-open-reader"></i><br>Grammar & Spellings </div>
+  <div class="subject-box" data-subject="entrance"><i class="fa-solid fa-pen"></i><br>Entrance Exam Prep </div>
+  <div class="subject-box" data-subject="coding"><i class="fa-solid fa-computer"></i><br>Coding & vocational studies </div>
+  <!-- Add more boxes as needed -->
+
+  <div id="modal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="subject-info"></p>
+      </div>
+  </div>
+  <img src="/Primary class.jpg" alt="Class Pics">
+  <h2><i> ~ A typical primary school class at Crestfield. </i></h2>
+</section>
+ <!-- footer -->
+
+ <footer>
+  <section class="footer-top">
+      <div>
+          <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+          <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+          </i>&nbsp;<i class="fa-brands fa-youtube">
+         <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <img src="/logo.jpg" alt="Logo">
+      <div>
+          <ul>
+              <a href="mission.html">
+                  <li>ABOUT</li>
+              </a>
+              <a href="preschool.html">
+                  <li>ACADEMICS</li>
+              </a>
+              <a href="admission-application.html">
+                  <li>ADMISSIONS</li>
+              </a>
+              <a href="email.html">
+                  <li>CONTACT</li>
+              </a>
+          </ul>
+      </div>
+  </section>
+  <br>
+  <hr><br>
+  <section class="footer-top responsive">
+    <img src="/logo.jpg" alt="Logo">
+    <div>
+        <a target="_blank" href="https://web.facebook.com/cmskano"><i class="fa-brands fa-facebook-f"></i></a>
+        <a target="_blank" href="mailto:crestfieldinfo@gmail.com"><i class="fa-solid fa-envelope-circle-check"></i></a>
+        </i>&nbsp;<i class="fa-brands fa-youtube">
+       <a target="_blank" href="https://www.instagram.com/crestfieldmetropolitan?igsh=MWJhOHI3dDkzOHUxcw=="> </i>&nbsp;<i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div>
+        <ul>
+            <a href="mission.html">
+                <li>ABOUT</li>
+            </a>
+            <a href="preschool.html">
+                <li>ACADEMICS</li>
+            </a>
+            <a href="admission-application.html">
+                <li>ADMISSIONS</li>
+            </a>
+            <a href="email.html">
+                <li>CONTACT</li>
+            </a>
+        </ul>
+    </div>
+</section>
+<br>
+<br>
+  <section class="footer-bottom">
+      <h3>Crestfield Metropolitan Schools |<br> <span><a target="_blank" href="https://www.google.com/maps/place/Crestfield+Metropolitan+Schools/@12.0506266,8.5317705,15z/data=!4m10!1m2!2m1!1screstfield+metropolitan+schools+kano+kano!3m6!1s0x11ae874eb1c15ba7:0x9226569381563039!8m2!3d12.0506266!4d8.5420702!15sCiljcmVzdGZpZWxkIG1ldHJvcG9saXRhbiBzY2hvb2xzIGthbm8ga2Fub5IBBnNjaG9vbOABAA!16s%2Fg%2F11r7y0g_g9?entry=ttu">1 Crestfield Avenue, Wisdom Estate, Kano</a> | +234-(0)-901-5152-030</span></h3>
+      <h3 id="all-rights">© 2024 Crestfield Metropolitan Schools. All Rights Reserved.</h3>
+  </section>
+</footer>
+<h6 style="color: grey; background-color: #242424; overflow-y: hidden; display: flex; justify-content: flex-end; padding: 1rem;">Powered by Clarence Omotalade <br>+234-(0)-708-602-3590
+</h6>
+
+<script src="main.js"></script>
+<script>
+  let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.subject-box');
+    const modal = document.getElementById('modal');
+    const subjectInfo = document.getElementById('subject-info');
+    const closeButton = document.querySelector('.close-button');
+
+    const subjectDetails = {
+      mathematics: `
+        <h1>•Grade 1 Mathematics</h1>
+        <p>In Grade 1, students focus on understanding basic number concepts, counting, and simple addition and subtraction. They learn to count to 100 by ones and tens, understand the concepts of greater than, less than, and equal to, and solve basic word problems. Additionally, students explore shapes and their attributes, begin to measure lengths using non-standard units, and understand the basics of telling time.</p>
+        <br/>
+        <h1>•Grade 2 Mathematics</h1>
+        <p>Grade 2 math builds on the foundations of Grade 1 by introducing more complex addition and subtraction, including two-digit numbers. Students learn to count by 2s, 5s, and 10s, and begin to explore the basics of multiplication and division. They delve into place value concepts up to 1,000, work with money, measure length in standard units, and continue to explore geometric shapes and their properties. Basic data interpretation through simple graphs and charts is also introduced.</p>
+        <br/>
+        <h1>•Grade 3 Mathematics</h1>
+        <p>In Grade 3, students deepen their understanding of multiplication and division, learning the times tables and solving related word problems. They explore fractions as parts of a whole, compare fractions, and understand equivalent fractions. Place value is extended to the thousands, and students work on adding and subtracting larger numbers. They also learn about perimeter, area, and volume, and continue to develop skills in measuring and interpreting data through more complex graphs.</p>
+        <br/>
+        <h1>•Grade 4 Mathematics</h1>
+        <p>Grade 4 students advance to more complex multiplication and division, including multi-digit problems. They study fractions and decimals in greater depth, learning to add and subtract fractions and understand decimal place value. Geometry lessons focus on the properties of angles, lines, and shapes, while measurement topics cover conversions between different units. Students also begin to explore basic algebraic concepts, such as finding unknown values in simple equations.</p>
+        <br/>
+        <h1>•Grade 5 Mathematics</h1>
+        <p>Grade 5 math introduces students to more advanced operations with fractions and decimals, including multiplication and division. They work on understanding and performing operations with mixed numbers, and delve deeper into concepts of volume and measurement. Geometry topics include coordinate planes, classifying two-dimensional figures, and understanding symmetry. Additionally, students explore introductory algebra, including writing and interpreting numerical expressions, and analyzing patterns and relationships.</p>
+      `,
+      art: `
+        <h1>•Grade 1 Cultural and Creative Arts</h1>
+        <p>Grade 1 Cultural and Creative Arts introduces young learners to basic artistic concepts and creative expression. Students explore colors, shapes, and textures through drawing, painting, and simple crafts. They also engage in basic music activities, learning about rhythm, melody, and different musical instruments. Storytelling and drama activities help develop their imagination and communication skills.</p>
+        </br>
+        <h1>•Grade 2 Cultural and Creative Arts</h1>
+        <p>In Grade 2, students build on their artistic skills by exploring more complex art techniques and materials. They experiment with collage, printmaking, and basic sculpture, enhancing their understanding of three-dimensional art. Music education focuses on recognizing musical patterns and rhythms, and students begin to learn simple songs and dances. Drama and creative movement activities continue to develop their confidence and expressiveness.</p>
+        </br>
+        <h1>•Grade 3 Cultural and Creative Arts</h1>
+        <p>Grade 3 Cultural and Creative Arts expands students' knowledge of different art forms and cultural traditions. They learn about famous artists and their works, exploring various artistic styles and techniques. Music lessons introduce basic music notation and the concept of harmony, while students participate in group singing and instrument play. Creative writing and performance activities encourage self-expression and collaboration.</p>
+        </br>
+        <h1>•Grade 4 Cultural and Creative Arts</h1>
+        <p>In Grade 4, students delve deeper into artistic techniques and the cultural significance of art. They work on more detailed projects in drawing, painting, and sculpture, and begin to explore digital art forms. Music education covers basic music theory, including reading notes and understanding scales. Students also engage in more structured drama activities, such as scriptwriting and performing short plays.</p>
+      </br>
+        <h1>•Grade 5 Cultural and Creative Arts</h1>
+        <p>Grade 5 students continue to develop their artistic skills and cultural awareness through more advanced projects and studies. They explore various art movements and experiment with different mediums, such as clay, textiles, and digital tools. Music lessons focus on ensemble performance and composition, while students learn to appreciate diverse musical genres. Drama activities include improvisation, character development, and performing in more complex productions.</p>
+      `,
+      science: `
+        <h1>•Grade 1 Basic Science</h1>
+        <p>In Grade 1 Basic Science, students are introduced to the wonders of the natural world through hands-on activities and simple experiments. They learn about living and non-living things, exploring basic characteristics of plants and animals. The curriculum includes studying weather patterns, the five senses, and the properties of everyday materials. Students are encouraged to observe, ask questions, and describe their surroundings.</p>
+        </br>
+        <h1>•Grade 2 Basic Science</h1>
+        <p>Grade 2 Basic Science builds on the foundations of Grade 1, delving deeper into the study of life cycles, habitats, and the physical environment. Students explore how plants and animals grow and change, and learn about the needs of living things. They investigate different types of weather and seasonal changes, as well as the states of matter (solid, liquid, gas). Simple experiments and observations help them understand scientific concepts and develop critical thinking skills.</p>
+        </br>
+        <h1>•Grade 3 Basic Science</h1>
+        <p>In Grade 3 Basic Science, students expand their knowledge of ecosystems, energy, and the human body. They explore the interdependence of plants, animals, and their environments, learning about food chains and habitats. The curriculum introduces basic principles of physics, such as forces and motion, and students conduct experiments to observe these principles in action. Additionally, they study the human body systems, focusing on health and nutrition.</p>
+        </br>
+        <h1>•Grade 4 Basic Science</h1>
+        <p>Grade 4 Basic Science covers a broader range of topics, including earth science, electricity, and the environment. Students learn about the Earth's layers, rocks, and minerals, and explore how natural processes like erosion and weathering shape our planet. They study basic electrical circuits and the properties of magnets. Environmental science is also emphasized, with discussions on conservation, recycling, and the impact of human activities on the planet.</p>
+        </br>
+        <h1>•Grade 5 Basic Science</h1>
+        <p>Grade 5 Basic Science delves into more complex topics such as space, ecosystems, and matter. Students explore the solar system, learning about planets, stars, and the Earth's place in the universe. They study ecosystems in greater detail, examining the relationships between organisms and their environments. The curriculum also covers the properties and changes of matter, including chemical reactions. Students conduct more advanced experiments and use scientific methods to analyze their findings, fostering a deeper understanding of scientific principles.</p>
+      `,
+      current: `
+        <h1>•Grade 1 National Values</h1>
+        <p>In Grade 1 National Values, students are introduced to the basics of social studies and civic education. They learn about their immediate community, understanding the roles of family members, neighbors, and community helpers. Simple concepts of citizenship, such as following rules and showing respect, are introduced. Students explore national symbols, such as the flag and anthem, and begin to understand the importance of unity and cooperation.</p>
+        </br>
+        <h1>•Grade 2 National Values</h1>
+        <p>Grade 2 National Values builds on the foundations laid in Grade 1, delving deeper into the roles and responsibilities of individuals in a community. Students learn about local government and public services, and explore different types of communities (urban, rural, and suburban). Civic education topics include basic rights and responsibilities, the importance of honesty and fairness, and the significance of national holidays and traditions.</p>
+        </br>
+        <h1>•Grade 3 National Values</h1>
+        <p>In Grade 3, students expand their understanding of national values by studying broader aspects of social studies and civic education. They explore the geography and culture of their country, learning about different regions and their unique characteristics. Lessons on government structure, including the roles of local and national leaders, are introduced. Civic education emphasizes the importance of community service, environmental stewardship, and respecting diversity.</p>
+       </br>
+        <h1>•Grade 4 National Values</h1>
+        <p>Grade 4 National Values covers more complex social and civic concepts, encouraging students to think critically about their role in society. They study the history and heritage of their country, learning about key historical events and figures. The curriculum includes lessons on the functions of government branches, the electoral process, and how laws are made. Civic education topics focus on human rights, the significance of the constitution, and the importance of active citizenship.</p>
+       </br>
+        <h1>•Grade 5 National Values</h1>
+        <p>In Grade 5, students delve into advanced topics in social studies and civic education, preparing them for deeper civic engagement. They explore global geography and cultures, understanding their country's place in the world. Lessons on the economy, including basic economic principles and the role of businesses, are introduced. Civic education emphasizes democratic values, critical thinking, and problem-solving skills, encouraging students to participate in community projects and understand their rights and duties as citizens.</p>
+      `,
+      reasoning: `
+        <h1>•Grade 1 General Reasoning and Knowledge</h1>
+        <p>In Grade 1 General Reasoning and Knowledge, students are introduced to basic verbal and quantitative reasoning skills. Verbal reasoning activities focus on vocabulary building, recognizing patterns in words, and simple logic puzzles. Quantitative reasoning covers basic concepts such as counting, recognizing numbers, and understanding simple patterns and sequences. These activities help develop critical thinking and problem-solving skills in a fun and engaging way.</p>
+        <br/>
+        <h1>•Grade 2 General Reasoning and Knowledge</h1>
+        <p>Grade 2 builds on the foundation set in Grade 1, enhancing both verbal and quantitative reasoning abilities. Verbal reasoning tasks include understanding analogies, completing sentences, and basic comprehension exercises. Quantitative reasoning involves simple arithmetic problems, understanding number patterns, and basic geometry concepts. These activities are designed to improve logical thinking and mathematical skills through practical and engaging exercises.</p>
+        <br/>
+        <h1>•Grade 3 General Reasoning and Knowledge</h1>
+        <p>In Grade 3, students deepen their verbal and quantitative reasoning skills through more complex tasks. Verbal reasoning includes understanding synonyms and antonyms, following multi-step instructions, and solving word puzzles. Quantitative reasoning covers multiplication and division, more advanced number sequences, and problem-solving using basic mathematical operations. These exercises are aimed at enhancing analytical thinking and reasoning proficiency.</p>
+        <br/>
+        <h1>•Grade 4 General Reasoning and Knowledge</h1>
+        <p>Grade 4 students tackle more advanced verbal and quantitative reasoning challenges. Verbal reasoning involves interpreting idioms, understanding proverbs, and engaging in critical reading exercises. Quantitative reasoning includes fractions, decimals, more complex number patterns, and introductory algebraic thinking. These activities help students develop higher-order thinking skills and prepare them for more abstract reasoning tasks.</p>
+        <br/>
+        <h1>•Grade 5 General Reasoning and Knowledge</h1>
+        <p>In Grade 5, students engage in sophisticated verbal and quantitative reasoning exercises that require advanced critical thinking. Verbal reasoning focuses on complex comprehension passages, logical deductions, and evaluating arguments. Quantitative reasoning covers advanced topics such as percentages, ratios, more complex algebraic expressions, and geometric reasoning. These exercises are designed to prepare students for rigorous academic challenges and enhance their overall cognitive abilities.</p>
+      `,
+      languages: `
+        <h1>•Grade 1 Languages</h1>
+        <p>In Grade 1 Languages, students are introduced to the basics of French and Hausa. For French, students begin with simple greetings, common phrases, and basic vocabulary such as colors, numbers, and family members. They engage in songs and interactive activities to develop listening and speaking skills. For Hausa, the focus is on basic conversational phrases, common greetings, and vocabulary related to everyday objects and activities. Students practice through storytelling, songs, and simple dialogues to build a strong foundation in both languages.</p>
+        </br>
+        <h1>•Grade 2 Languages</h1>
+        <p>Grade 2 Languages continues to build on the foundational skills acquired in Grade 1. In French, students expand their vocabulary and begin to form simple sentences. They learn about days of the week, months, and basic descriptions of people and objects. Interactive activities, such as role-playing and games, help reinforce language skills. In Hausa, students further their conversational skills, learn to introduce themselves, and describe their surroundings. They engage in group activities and simple reading exercises to enhance their understanding and use of the language.</p>
+       </br>
+        <h1>•Grade 3 Languages</h1>
+        <p>In Grade 3 Languages, students delve deeper into both French and Hausa. French lessons focus on sentence structure, basic grammar rules, and vocabulary related to school, hobbies, and food. Students start to read simple texts and engage in conversations about everyday topics. In Hausa, the curriculum includes more complex phrases, sentence construction, and vocabulary expansion. Students participate in storytelling, cultural songs, and dialogues to improve their fluency and comprehension.</p>
+        </br>
+        <h1>•Grade 4 Languages</h1>
+        <p>Grade 4 Languages offers more advanced instruction in French and Hausa. French classes emphasize reading comprehension, writing simple paragraphs, and engaging in more detailed conversations. Students learn about French culture and practice through interactive activities such as skits and dialogues. In Hausa, students work on more complex grammatical structures, enhance their vocabulary, and practice reading and writing short passages. Cultural studies and group discussions help deepen their understanding and appreciation of the language.</p>
+        </br>
+        <h1>•Grade 5 Languages</h1>
+        <p>Grade 5 Languages prepares students for higher proficiency in French and Hausa. In French, students focus on more advanced grammar, including verb conjugations and tenses. They engage in reading longer texts, writing essays, and participating in debates and discussions. Cultural lessons provide deeper insights into Francophone countries. In Hausa, students refine their speaking, reading, and writing skills through complex texts, advanced vocabulary, and cultural projects. They engage in conversations, storytelling, and written assignments to achieve a higher level of fluency and cultural understanding.</p>
+      `,
+      comprehension: `
+      <h1>•Grade 1 English Comprehension & Composition</h1>
+        <p>In Grade 1 English Comprehension & Composition, students are introduced to the fundamentals of reading and writing. Comprehension activities focus on understanding simple stories and passages, identifying main ideas, and answering basic questions about the text. Students learn to recognize key details and sequence events. Composition tasks involve writing simple sentences, using basic punctuation, and developing fine motor skills through handwriting practice. Creative activities like drawing and labeling pictures help reinforce their understanding of written language.</p>
+        </br>
+        <h1>•Grade 2 English Comprehension & Composition</h1>
+        <p>Grade 2 students build on their reading and writing skills with more complex texts and writing assignments. Comprehension exercises include reading short stories, poems, and informational texts, followed by answering questions that test understanding and critical thinking. Students learn to identify characters, settings, and plot, and begin to make inferences. Composition tasks involve writing short paragraphs, using descriptive language, and practicing correct grammar and punctuation. They also start to write personal narratives and simple stories, enhancing their ability to organize thoughts and ideas.</p>
+       </br>
+        <h1>•Grade 3 English Comprehension & Composition</h1>
+        <p>In Grade 3, students engage with a variety of texts to improve their comprehension skills. They read longer and more challenging stories, articles, and poems, focusing on understanding themes, main ideas, and supporting details. Students practice summarizing texts and identifying the author's purpose. Composition activities involve writing multi-paragraph texts, including narratives, descriptive essays, and basic reports. They learn to use transitions, develop ideas logically, and apply more complex punctuation and grammar rules.</p>
+        </br>
+        <h1>•Grade 4 English Comprehension & Composition</h1>
+        <p>Grade 4 students delve into deeper comprehension and composition skills. They read a wide range of genres, including fiction, non-fiction, and poetry, and analyze the text to understand character development, themes, and author's techniques. Comprehension exercises include making inferences, drawing conclusions, and comparing and contrasting information. Composition tasks involve writing structured essays, research reports, and creative stories. Students focus on organizing their writing coherently, using rich vocabulary, and editing for clarity and correctness.</p>
+        </br>
+        <h1>•Grade 5 English Comprehension & Composition</h1>
+        <p>In Grade 5, students engage with advanced texts and complex writing tasks. Comprehension activities include critical analysis of texts, identifying figurative language, and understanding implicit meanings. Students read novels, historical documents, and scientific articles, honing their ability to analyze and interpret information. Composition tasks involve writing persuasive essays, detailed reports, and imaginative stories. They learn to develop strong thesis statements, support arguments with evidence, and refine their writing through multiple drafts and revisions. Emphasis is placed on mastering grammar, syntax, and advanced vocabulary to enhance their overall communication skills.</p>
+      `,
+      grammar:`
+      <h1>•Grade 1 English Grammar</h1>
+        <p>In Grade 1 English Grammar, students are introduced to the basics of sentence structure and word types. They learn to identify and use nouns, pronouns, and verbs in simple sentences. Basic punctuation, such as periods and question marks, is introduced to help them understand sentence boundaries. Through engaging activities like sentence building games and interactive worksheets, students begin to form correct and complete sentences, laying the foundation for effective communication.</p>
+        </br>
+        <h1>•Grade 2 English Grammar</h1>
+        <p>Grade 2 English Grammar builds on the foundational skills learned in Grade 1. Students expand their understanding of parts of speech by learning about adjectives and adverbs, which enhance their descriptive abilities. They practice forming and punctuating compound sentences using conjunctions like "and," "but," and "or." Lessons also cover the correct use of capitalization and more complex punctuation marks such as commas in lists. Students engage in writing activities that incorporate these elements, helping them to create more detailed and structured sentences.</p>
+       </br>
+        <h1>•Grade 3 English Grammar</h1>
+        <p>In Grade 3, students delve deeper into grammatical concepts and sentence construction. They learn about subject-verb agreement, the correct use of irregular verbs, and the distinction between singular and plural nouns. Lessons include the proper use of possessive nouns and pronouns, as well as the introduction of prepositions and their phrases. Students practice these concepts through various writing exercises and grammar games, which help reinforce their understanding and application in writing.</p>
+        </br>
+        <h1>•Grade 4 English Grammar</h1>
+        <p>Grade 4 students explore more advanced grammar topics, including the use of different verb tenses (past, present, and future) and the correct application of subject and object pronouns. They study the roles of conjunctions in forming complex sentences and the use of quotation marks in direct speech. Lessons also cover the identification and correction of common grammatical errors. Through extensive writing practice and peer review, students refine their grammar skills and improve the clarity and accuracy of their written communication.</p>
+        </br>
+        <h1>•Grade 5 English Grammar</h1>
+        <p>In Grade 5, students master advanced grammatical structures and nuances. They learn about perfect tenses, the use of relative pronouns, and the proper placement of modifiers to avoid ambiguity. The curriculum includes lessons on passive and active voice, as well as the use of subjunctive mood. Students also focus on varying sentence structures to improve the flow and sophistication of their writing. Comprehensive exercises and writing assignments provide opportunities to apply these advanced grammar skills in context, preparing them for higher levels of academic writing.</p>
+      `,
+      entrance: `
+      <h1>•Grade 5 Common Entrance Exams Preparation</h1>
+    </br>
+      <p>For Grade 5 pupils, preparing for the Common Entrance exam is a critical part of their academic year, as it determines their eligibility to move on to secondary school. The preparation begins towards the end of the second term and intensifies throughout the third term. Teachers engage students in a rigorous study regimen, incorporating review sessions, practice exams, and targeted lessons focused on key subjects tested in the exam. </br></br>
+         Throughout this period, students participate in intensive revision classes that cover all core subjects, including mathematics, science, English, and social studies. Teachers provide additional resources, such as past exam papers, mock tests, and study guides, to familiarize students with the exam format and question types. Extra tutoring sessions and after-school study groups are organized to give students personalized support and address any areas of weakness.</br></br>
+         The preparation also includes teaching test-taking strategies to help students manage their time effectively and approach different types of questions confidently. Regular feedback from teachers helps students track their progress and identify areas for improvement. This comprehensive approach ensures that by the time the third term concludes, Grade 5 students are well-prepared, confident, and ready to excel in their Common Entrance exam.
+      </p>
+      
+      `,
+      coding:`
+      <h1>•Grade 1 Coding and Pre-Vocational Studies</h1>
+        <p>In Grade 1, students are introduced to basic coding and pre-vocational skills through engaging and hands-on activities. In coding, they start with fundamental concepts such as sequencing, patterns, and simple algorithms using visual programming tools like Scratch Jr. They learn to create simple animations and interactive stories, which helps develop their logical thinking and problem-solving skills. Pre-vocational studies focus on understanding the concept of work and various community helpers. Students explore different professions through role-playing and interactive activities, fostering an early appreciation for various careers and the value of work.</p>
+        </br>
+        <h1>•Grade 2 Coding and Pre-Vocational Studies</h1>
+        <p>Grade 2 builds on the basics learned in Grade 1, advancing students' coding and pre-vocational knowledge. In coding, they continue to use visual programming tools, working on more complex projects that involve loops and conditionals. Students learn to create simple games and interactive projects, enhancing their computational thinking skills. Pre-vocational studies expand to include basic financial literacy, such as understanding money, savings, and simple transactions. Students also explore the roles and responsibilities of different jobs in the community, often through classroom simulations and guest speakers.</p>
+       </br>
+        <h1>•Grade 3 Coding and Pre-Vocational Studies</h1>
+        <p>In Grade 3, students delve deeper into coding and pre-vocational education. Coding lessons introduce basic block-based programming with platforms like Scratch, where students work on projects that incorporate variables and basic debugging. They create more complex games and animations, enhancing their coding proficiency. Pre-vocational studies cover more detailed aspects of various professions, basic entrepreneurship concepts, and the importance of teamwork and collaboration. Students participate in project-based learning activities that simulate real-world tasks and jobs, helping them understand the practical applications of their skills.</p>
+        </br>
+        <h1>•Grade 4 Coding and Pre-Vocational Studies</h1>
+        <p>Grade 4 students continue to advance their coding and pre-vocational skills. In coding, they transition to more sophisticated programming concepts, including simple loops, functions, and events. They begin to understand the logic behind coding and apply it to create interactive projects and basic applications. Pre-vocational studies emphasize more advanced financial literacy, including budgeting and understanding the economy. Students explore different career paths, the skills required for various professions, and the concept of personal responsibility in the workplace. Hands-on projects and collaborations with community organizations provide practical experience.</p>
+        </br>
+        <h1>•Grade 5 Coding and Pre-Vocational Studies</h1>
+        <p>In Grade 5, students reach a higher level of coding and pre-vocational proficiency. Coding lessons cover more advanced concepts such as conditional statements, more complex loops, and introductory text-based programming with platforms like HTML and CSS. Students work on comprehensive projects that combine multiple coding elements, fostering creativity and innovation. Pre-vocational studies focus on preparing students for future career choices, including detailed studies of various professions, career planning, and advanced financial literacy. They learn about job applications, interviews, and workplace ethics. Practical projects and interactions with professionals provide a realistic understanding of different career paths and the skills required to succeed.</p>
+      `
+      // Add more subjects as needed
+    };
+
+    boxes.forEach(box => {
+        box.addEventListener('click', () => {
+            const subject = box.getAttribute('data-subject');
+            subjectInfo.innerHTML = subjectDetails[subject]; // Use innerHTML to render HTML content
+            modal.style.display = 'block';
+        });
+    });
+
+    closeButton.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+});
+
+
+</script>
+</body>
+</html>
